@@ -1,0 +1,7 @@
+Created by Omii
+This is the created lineUnfortunately the main file was deleted in previous operation
+This is the append file.
+ new appended line - 1
+ new appended line - 2
+ new appended line - 3
+ These are lines that were appended at once.
