@@ -1,0 +1,10 @@
+2025-07-26 09:19:23-Arithmetic_App-DEBUG-Adding 10+20 = 30
+2025-07-26 09:19:23-Arithmetic_App-DEBUG-Subtracting 23-10 = 13
+2025-07-26 09:19:23-Arithmetic_App-DEBUG-Multiplying 23*7 = 161
+2025-07-26 09:19:23-Arithmetic_App-DEBUG-Dividing 20/10 = 2.0
+2025-07-26 09:19:23-Arithmetic_App-DEBUG-Dividing 0/7 = 0.0
+2025-07-26 09:20:01-Arithmetic_App-DEBUG-Adding 10+20 = 30
+2025-07-26 09:20:01-Arithmetic_App-DEBUG-Subtracting 23-10 = 13
+2025-07-26 09:20:01-Arithmetic_App-DEBUG-Multiplying 23*7 = 161
+2025-07-26 09:20:01-Arithmetic_App-DEBUG-Dividing 20/10 = 2.0
+2025-07-26 09:20:01-Arithmetic_App-ERROR-Division by zero error
