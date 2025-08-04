@@ -5,7 +5,11 @@ def aboutus(request):
     return HttpResponse("This is the about us page.")
 
 def home(request):
-    return render(request, "index.html")  # Render the index.html template
+    data = {
+        'title':'Home',
+        'bdata':'Welcome to the world of Django!!!'
+    }
+    return render(request, "index.html",data)  # Render the index.html template
 
 def course(request):
     return HttpResponse("<b>This is Course page..</b>")
