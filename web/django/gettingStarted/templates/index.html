@@ -53,5 +53,14 @@
       </tr>
       {% endfor %}
     </table>
+
+    <br />
+
+    <h2>Numbers List</h2>
+    <ul style="list-style-type: none; padding: 0; text-align: center">
+      {% for number in numbers %} {% if number > 0 and number < 4%}
+      <div><li style="display: inline; margin: 0 10px">{{ number }}</li></div>
+      {% else %} {% endif %} {% endfor %}
+    </ul>
   </body>
 </html>

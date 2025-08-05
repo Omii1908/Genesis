@@ -9,6 +9,7 @@ def home(request):
         'title':'Home',
         'bdata':'Welcome to the world of Django!!!',
         'clist':['Java', 'Python', 'Javascript'],
+        'numbers': [1, 2, 3, 4, 5],
         'students_details': [
             {'name': 'John', 'age': 20, 'course': 'Python'},
             {'name': 'Alice', 'age': 22, 'course': 'Java'},
