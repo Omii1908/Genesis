@@ -7,7 +7,13 @@ def aboutus(request):
 def home(request):
     data = {
         'title':'Home',
-        'bdata':'Welcome to the world of Django!!!'
+        'bdata':'Welcome to the world of Django!!!',
+        'clist':['Java', 'Python', 'Javascript'],
+        'students_details': [
+            {'name': 'John', 'age': 20, 'course': 'Python'},
+            {'name': 'Alice', 'age': 22, 'course': 'Java'},
+            {'name': 'Bob', 'age': 21, 'course': 'JavaScript'}
+        ]
     }
     return render(request, "index.html",data)  # Render the index.html template
 

@@ -18,5 +18,40 @@
   </head>
   <body>
     {{bdata}}
+
+    <h2>Courses Details</h2>
+    <table border="1" style="width: 50%; margin: auto; text-align: left">
+      <tr>
+        <th>Course ID</th>
+        <th>Course Name</th>
+      </tr>
+      {% for course in clist %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ course }}</td>
+      </tr>
+      {% endfor %}
+      <tr>
+        <td colspan="2">Total Courses: {{ clist|length }}</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <h2>Student Details</h2>
+    <table border="1" style="width: 50%; margin: auto; text-align: left">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+      </tr>
+      {% for student in students_details %}
+      <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.course }}</td>
+      </tr>
+      {% endfor %}
+    </table>
   </body>
 </html>
