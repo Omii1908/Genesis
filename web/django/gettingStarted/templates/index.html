@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{title}}</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        text-align: center;
-        padding: 50px;
-      }
-      h1 {
-        color: #2c3e50;
-      }
-    </style>
-  </head>
-  <body>
-    {{bdata}}
+<html lang="en">
 
-    <h2>Courses Details</h2>
-    <table border="1" style="width: 50%; margin: auto; text-align: left">
-      <tr>
-        <th>Course ID</th>
-        <th>Course Name</th>
-      </tr>
-      {% for course in clist %}
-      <tr>
-        <td>{{ forloop.counter }}</td>
-        <td>{{ course }}</td>
-      </tr>
-      {% endfor %}
-      <tr>
-        <td colspan="2">Total Courses: {{ clist|length }}</td>
-      </tr>
-    </table>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
 
-    <br />
+<body>
+    <span class="bg-img"></span>
+    <img src="/static/images/mars.png" alt="Mars" class="mars">
+    <div class="container">
+        <header>
+            <a href="#">Mars</a>
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Launch Schedule</a></li>
+                <li><a href="#">Contact</a></li>
+            </ol>
+        </header>
+        <main>
+            <h1>Humans live on Mars <br>is it possible?</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, labore. Placeat neque odit sequi ex
+                commodi, itaque quae! Pariatur neque nostrum eligendi saepe tempora excepturi maxime impedit quisquam
+                dolorum porro?</p>
 
-    <h2>Student Details</h2>
-    <table border="1" style="width: 50%; margin: auto; text-align: left">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Course</th>
-      </tr>
-      {% for student in students_details %}
-      <tr>
-        <td>{{ student.name }}</td>
-        <td>{{ student.age }}</td>
-        <td>{{ student.course }}</td>
-      </tr>
-      {% endfor %}
-    </table>
+            <div class="d-flex">
+                <a href="#">
+                    <span>
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    Explore Mars
+                </a>
+                <a href="#">
+                    <span>
+                        <i class="fas fa-play"></i>
+                    </span>
+                    Watch video
+                </a>
+            </div>
+            <ol class="info">
+                <li class="item">
+                    <h5>01</h5>
+                    <h4>China started the exploration of Mars</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatum.</p>
+                </li>
+                <li class="item">
+                    <h5>02</h5>
+                    <h4>7 facts of mars</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatum.</p>
+                </li>
+            </ol>
+        </main>
+    </div>
+</body>
 
-    <br />
-
-    <h2>Numbers List</h2>
-    <ul style="list-style-type: none; padding: 0; text-align: center">
-      {% for number in numbers %} {% if number > 0 and number < 4%}
-      <div><li style="display: inline; margin: 0 10px">{{ number }}</li></div>
-      {% else %} {% endif %} {% endfor %}
-    </ul>
-  </body>
 </html>
