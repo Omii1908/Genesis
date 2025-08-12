@@ -21,8 +21,10 @@ from gettingStarted import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("aboutus/", views.aboutus, name="aboutus"),
-    path("", views.home, name="home"),
-    path("course/", views.course, name="course"),
-    path("course/<int:course_id>/", views.course_detail, name="course_detail"), ##Dynamic url can be created using 3 data types(int, str, slug)
+    path('', views.home, name='home'),
+    path('info/', views.info, name='info'),
+    path('about/', views.about, name='about'),
+    path('project/', views.project, name='project'),
+    path('launch_schedule/', views.launch_schedule, name='launch_schedule'),
+    path('contact/', views.contact, name='contact'),
 ]
